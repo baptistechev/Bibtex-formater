@@ -1,4 +1,4 @@
-# bib_parser.py
+# biblio_formater.py
 
 A BibTeX bibliography cleaner and formatter. It normalises `.bib` files by correcting entry types, pruning unnecessary fields, abbreviating author names, replacing journal names with their standard abbreviations, and flagging missing or suspicious data.
 
@@ -25,7 +25,7 @@ A BibTeX bibliography cleaner and formatter. It normalises `.bib` files by corre
 ## Usage
 
 ```bash
-python bib_parser.py <file.bib>
+python biblio_formater.py <file.bib>
 ```
 
 The cleaned file is written next to the input file with the suffix `_parsed.bib`:
@@ -56,7 +56,7 @@ If the file is not found, a warning is printed and journal replacement is skippe
 
 ## Configuration
 
-At the top of `bib_parser.py` there are two user-facing constants:
+At the top of `biblio_formater.py` there are two user-facing constants:
 
 | Constant | Default | Description |
 |---|---|---|
@@ -94,7 +94,7 @@ While processing, the script prints:
 ## Example
 
 ```bash
-$ python bib_parser.py refs.bib
+$ python biblio_formater.py refs.bib
 
  Number of entries found : 42
 
